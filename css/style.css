@@ -1,0 +1,29 @@
+
+.container {
+	width: 80%;
+	max-width: 960px;
+	margin: auto;
+}
+
+.code-section {
+	background: #2F3129;
+	padding: 10px 0px;
+	border-radius: 8px;
+	position: relative;
+}
+
+.code-section .code-editor {
+	font-size: 15px;
+	min-height: 360px;
+}
+
+.code-section .functions {
+	position: absolute;
+	bottom: 8px;
+	right: 12px;
+}
+
+#qunit-header,
+#qunit-testrunner-toolbar {
+	display: none;
+}
