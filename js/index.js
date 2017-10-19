@@ -33,7 +33,7 @@
 
 
   $('#commitCode').click(function () {
-    let message = 'Are you sure to commit the code?'
+    let message = '確認下載編輯區的程式碼?'
     if (confirm(message)) {
       download(getFileName(), editor.getValue())
     }
@@ -56,9 +56,10 @@
   // init code instruction
   $('#instruction').text(testCaseInstruction);
 
+  // 詢問是否要離開頁面
   window.addEventListener('beforeunload', function (e) {
-    let confirmationMessage = '確定要離開？';
-    e.returnValue = confirmationMessage;     // Gecko, Trident, Chrome 34+
+    let confirmationMessage = '編輯區的程式碼無法存擋，是否確定要離開？';
+    e.returnValue = confirmationMessage; // Gecko, Trident, Chrome 34+
     return confirmationMessage; // Gecko, WebKit, Chrome <34
   });
 
