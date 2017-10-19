@@ -37,6 +37,7 @@ body {
 	position: absolute;
 	bottom: 8px;
 	right: 12px;
+	z-index: 66;
 }
 .code-section .functions > button {
 	font-size: 20px;
