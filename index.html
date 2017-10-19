@@ -2,19 +2,23 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>QUnit basic example</title>
+  <title>JS coding unit</title>
   <link rel="stylesheet" href="./assets/qunit/qunit-2.4.0.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./assets/jquery/jquery-3.2.1.min.js"></script>
-  <script src="./assets/qunit/qunit-2.4.0.js"></script>
+  <script src="./js/quickTest.js"></script>
 </head>
 <body>
   <div class="container">
+    <div class="header">
+      <h1>Code test</h1>
+      <div id="instruction" class="instruction"></div>
+    </div>
     <div class="code-section">
       <div id="codeEditor" class="code-editor"></div>
       <div class="functions">
-        <button id="runTest">check</button>
-        <button id="commitCode">commit</button>
+        <button id="startQunit">Run Code</button>
+        <button id="commitCode">Commit</button>
       </div>
     </div>
     <div class="qunit-srction">
@@ -25,5 +29,6 @@
   
   <script src="./assets/ace/ace.js"></script>
   <script src="./js/index.js"></script>
+  <script id="qunitScript" src="./assets/qunit/qunit-2.4.0.js"></script>
 </body>
 </html>

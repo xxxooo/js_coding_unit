@@ -1,20 +1,36 @@
 
+body {
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.header {
+	margin: 1em 54px;
+}
+.header > h1 {
+	font-weight: lighter;
+	margin: 0.2em 0;
+}
+.header > .instruction {
+	white-space: pre;
+}
+
 .container {
-	width: 80%;
-	max-width: 960px;
+	width: 90%;
+	max-width: 920px;
 	margin: auto;
 }
 
 .code-section {
 	background: #2F3129;
-	padding: 10px 0px;
-	border-radius: 8px;
+	padding: 8px 0px;
+	border-radius: 6px 6px 0 0;
 	position: relative;
 }
 
 .code-section .code-editor {
 	font-size: 15px;
-	min-height: 360px;
+	height: 60vh;
+	min-height: 420px;
 }
 
 .code-section .functions {
@@ -22,8 +38,27 @@
 	bottom: 8px;
 	right: 12px;
 }
+.code-section .functions > button {
+	font-size: 20px;
+	line-height: 20px;
+	padding: 4px 12px;
+	border-radius: 15px;
+	border: 2px solid #2B81AF;
+	background: #ffffff;
+	color: #2B81AF;
+	opacity: 0.85;
+	cursor: pointer;
+}
+.code-section .functions > button:last-child {
+	background: #2B81AF;
+	color: #ffffff;
+}
+.code-section .functions > button:hover {
+	opacity: 1;
+}
 
 #qunit-header,
-#qunit-testrunner-toolbar {
+#qunit-testrunner-toolbar,
+#qunit-tests li a {
 	display: none;
 }
